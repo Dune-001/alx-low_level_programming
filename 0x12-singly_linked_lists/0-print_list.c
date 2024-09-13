@@ -5,7 +5,7 @@
  * print_list - print elements of list_t
  * @h: pointer to list_t
  *
- * Return: Always 0 (Success)
+ * Return: number of elements in the list
  */
 size_t print_list(const list_t *h)
 {

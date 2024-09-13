@@ -13,7 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *temp_node;
 	unsigned int k;
 
-	if (curent_node == NULL)
+	if (current_node == NULL)
 		return (-1);
 	if (index = 0)
 	{
@@ -27,7 +27,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (current_node == NULL || current_node->next == NULL)
 		return (-1);
-	temp_mode = current_node->next;// store node to be deleted
+	temp_node = current_node->next;// store node to be deleted
 	current_node->next = temp_node->next;// adjust pointer to skip node to be deleted
 	free(temp_node);// free memory of deleted node
 	return (1);
