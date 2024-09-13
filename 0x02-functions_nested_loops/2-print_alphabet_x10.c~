@@ -1,0 +1,28 @@
+#include "main.h"
+
+int _putchar(char c);
+{
+	putchar(c);
+	return (c);
+}
+
+void print_alphabet(void);
+{
+	char letter = 'a';
+	int repetitions = 10;
+
+	while (repetitions < 10)
+	{
+		while(letter <= 'z')
+		{
+		_putchar(letter);
+		letter ++;
+		}
+		letter = 'a';
+		repetitions++;
+		if (repetitions < 10)
+			_putchar('\n');
+	}
+	return (0);
+}
+

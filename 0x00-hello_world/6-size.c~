@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  printf("Size of a char: %zu byte(s)\n", size of (char));
+  printf("Size of a long int: %zu byte(s)\n", size of (long int));
+  printf("Size of an int: %zu byte(s)\n", size of (int));
+
+  #ifdef __STDC_IEC_559__
+  printf("Warning: Size of float varies depending on a system");
+  #endif
+
+  printf("Size of a float: %zu byte(s)\n", size of (float));
+  printf("Size of a double: %zu byte(s)\n", size of (double));
+
+  return 0;
+
+}

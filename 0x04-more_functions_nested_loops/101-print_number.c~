@@ -1,0 +1,11 @@
+#include "main.h"
+
+void print_number(int n)
+{
+	if (n < 0)
+	{
+		_putchar('_');
+		n = -n;
+	}
+	int divisor = 1;
+	

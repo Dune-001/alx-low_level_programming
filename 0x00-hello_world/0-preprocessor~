@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z "$CFILE" ]; then
+   echo "ERROR: Do include a C file name as an arg."
+   exit 1
+fi
+
+if [ ! -f "CFILE" ]; then
+   echo "ERROR; file '$CFILE' isn't available"
+   exit 1
+fi
+
+gcc -E "$CFILE" > c
+
+echo "Preprocessed file saved in c."
