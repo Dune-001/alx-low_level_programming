@@ -9,10 +9,10 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	char *accept_ptr;
 
-	while (*s)
+	while (*s != '\0')
 	{
 		accept_ptr = accept;
-		while (*accept_ptr)
+		while (*accept_ptr != '\0')
 		{
 			if (*s == *accept_ptr)
 			{
@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			accept_ptr++;
 		}
-		if (*accept_ptr)
+		if (*accept_ptr == '\0')
 		{
 			return (count);
 		}
