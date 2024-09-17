@@ -2,6 +2,7 @@
 /**
  * factorial finds the faactorial of a number
  * @n: the factorial number
+ * 
  * Return: Always 0
  */
 int factorial(int n)
