@@ -2,8 +2,8 @@
 /**
  * factorial finds the faactorial of a number
  * @n: the factorial number
- * 
- * Return: Always 0
+ *
+ * Return: -1 if there is no factorial
  */
 int factorial(int n)
 {
