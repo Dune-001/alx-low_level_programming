@@ -2,7 +2,8 @@
 /**
  * factorial finds the faactorial of a number
  * @n: the factorial number
- * Return: Always 0
+ *
+ * Return: -1 to indicate error
  */
 int factorial(int n)
 {
@@ -14,5 +15,5 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return (n * factorial(n -1));
+	return (n * factorial(n - 1));
 }
