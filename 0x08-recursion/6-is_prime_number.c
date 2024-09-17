@@ -18,7 +18,7 @@ int prime_helper(int n, int h)
 	{
 		return (0);
 	}
-	return prime_helper(n, h + 1);
+	return (prime_helper(n, h + 1));
 }
 /**
  * is_prime_number - check if a digit is a prime number
@@ -27,5 +27,5 @@ int prime_helper(int n, int h)
  */
 int is_prime_number(int n)
 {
-	return prime_helper(n, 2);
+	return (prime_helper(n, 2));
 }
