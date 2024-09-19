@@ -3,7 +3,8 @@
  * _sqrt_helper - helper function
  * @n: the number
  * @random: guess a number
- * Return: Always 0
+ *
+ * Return: -1 if n doesn't have a natural square root
  */
 int _sqrt_helper(int n, int random)
 {
@@ -15,7 +16,7 @@ int _sqrt_helper(int n, int random)
 	{
 		return (random);
 	}
-	return _sqrt_helper(n, random + 1);
+	return (_sqrt_helper(n, random + 1));
 }
 /**
  * _sqrt_recursion - find natural square root

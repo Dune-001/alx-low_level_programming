@@ -3,21 +3,16 @@
  * *_strchr - locate a char in a string
  * @s: pointer to memory area
  * @c: char to locate in str
- * Return: Always 0
+ * Return: pointer to first occurrence c
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int i = 0;
+
+	for (; s[i] >= '\0'; s++)
 	{
-		if (*s == c)
-		{
-			return(s);
-		}
-		s++;
+		if (s[i] == c)
+			return (&s[i]);
 	}
-	if (c == '\0')
-	{
-		return (s);
-	}
-	return NULL;
+	return (0);
 }

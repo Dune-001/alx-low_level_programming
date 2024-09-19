@@ -3,6 +3,8 @@
  * prime-helper - helper function
  * @n: the number
  * @h: checks possible numbers
+ *
+ * Return: is a prime helper
  */
 int prime_helper(int n, int h)
 {
@@ -23,6 +25,7 @@ int prime_helper(int n, int h)
 /**
  * is_prime_number - check if a digit is a prime number
  * @n: The number to test
+ *
  * Return: Always 0
  */
 int is_prime_number(int n)

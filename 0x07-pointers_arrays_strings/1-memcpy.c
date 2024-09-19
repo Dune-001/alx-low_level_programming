@@ -4,18 +4,17 @@
  * @dest: destination
  * @src: source of the string
  * @n: number of bytes to be copied
- * Return: Always 0
+ * Return: pointer to dest
  */
 char *_memcpy(char *dest, const char *src, unsigned int n)
 {
-	char *dest_start = dest;
+	int r = 0;
+	int i = n;
 
-	while (n > 0)
+	for (; r < i; r++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
-		n--:
+		dest[r] = src[r];
+		n--;
 	}
-	return (dest_start);
+	return (dest);
 }

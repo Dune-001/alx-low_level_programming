@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-list_T *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
 
@@ -30,7 +30,7 @@ list_T *add_node_end(list_t **head, const char *str)
 	else
 	{
 		temp = *head;
-		while (temp->next != NULL)\
+		while (temp->next != NULL)
 		{
 			temp = temp->next;
 		}
