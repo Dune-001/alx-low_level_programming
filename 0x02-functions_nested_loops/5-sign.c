@@ -7,25 +7,21 @@
  *
  * Return: 1 if positive 0 if zero and -1 f negative.
  */
-int print_sign(int h)
+int print_sign(int n)
 {
-	if (h > 0)
+	if (n > 0)
 	{
 		_putchar('+');
-		_putchar(',');
-		_putchar(' ');
 		return (1);
-	} else if (h == 0)
+	}
+	else if (n == 0)
 	{
 		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
 		return (0);
-	} else
+	}
+	else
 	{
 		_putchar('-');
-		_putchar(',');
-		_putchar(' ');
 		return (-1);
 	}
 }

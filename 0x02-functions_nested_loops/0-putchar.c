@@ -7,8 +7,6 @@
  *
  * Return: Char as an unsigned char cast as an int.
  */
-int _putchar(char c);
-
 /**
  * main - Entry point.
  *

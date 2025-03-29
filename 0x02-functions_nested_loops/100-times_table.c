@@ -1,48 +1,30 @@
 #include <stdio.h>
 /**
  * print_times_table - prints a times table
- * @n: accepts an int.
+ * @k: Times table to print
  *
- * Description: prints the multiplication table for a given number.
+ * Description: prints the multiplication table for a given number 0 to n.
  *
  * Return: the times table for int n.
  */
-void print_times_table(int k)
+void print_times_table(int n)
 {
-	int h = 0;
-	int j = 0;
-	if (k < 0 || k > 15)
-	{
+	int m, k, product;
+
+	if (n < 0 || n > 15)
 		return;
-	}
-	int j = 0;
-	
-	while (j <= 12)
+
+	for (m = 0; m <= n; m++)
 	{
-		while (h <= k)
+		for (k = 0; k <= n; k++)
 		{
-			printf("%4d", j * h);
-			{
-				if (h != k)
-				{
-					printf(",");
-				}
-				h++;
-			}
-			printf("\n");
-			j++;
+			product = m * k;
+
+			if (k == 0)
+				printf("%d", product);
+			else
+				printf(", %3d", product);
 		}
+		printf("\n");
 	}
 }
-/**
- * main - Entry point.
- * 
- * Description: uses prints time table.
- *
- * Return: A times table.
- */
-	int main(void)
-	{
-		print_times_table();
-		return 0;
-	}

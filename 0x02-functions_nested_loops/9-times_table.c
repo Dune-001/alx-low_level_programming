@@ -8,24 +8,26 @@
  */
 void times_table(void)
 {
-	int row = 0;
+	int m, n, product;
 
-	while (row <= 9)
+	for (m = 0; m <= 9; m++)
 	{
-		int col = 0;
-
-		while (col <= 9)
+		for (n = 0; n <= 9; n++)
 		{
-			int answer = row * col;
-			_putchar(answer);
-			if (col < 9)
+			product = m * n;
+
+			if (n == 0)
+				_putchar(product + '0');
+			else
 			{
-				_putchar(,);
-				_putchar( );
+				_putchar(',');
+				_putchar(' ');
+
+				if (product < 10)
+					_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
 			}
-			col++;
 		}
 		_putchar('\n');
-		row++;
 	}
 }

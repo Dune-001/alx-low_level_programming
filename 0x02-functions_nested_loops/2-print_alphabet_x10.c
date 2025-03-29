@@ -8,18 +8,9 @@
  */
 void print_alphabet_x10(void)
 {
-	char letter = 'a';
-	int repetitions = 10;
+	int m;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
 
-	while (repetitions < 10)
-	{
-		while (letter <= 'z')
-		{
-		_putchar(letter);
-		letter++;
-		}
-		letter = 'a';
-		_putchar('\n');
-		repetitions++;
-	}
+	for (m = 0; m < 10; m++)
+		_putchar(alphabet);
 }
