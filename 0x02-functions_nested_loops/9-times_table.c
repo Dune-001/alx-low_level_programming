@@ -16,15 +16,18 @@ void times_table(void)
 		{
 			product = m * n;
 
-			if (n == 0)
-				_putchar(product + '0');
-			else
+			if (n > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-
-				if (product < 10)
-					_putchar((product / 10) + '0');
+				if (product < 10) /* single digit numbers need extra space*/
+					_putchar(' ');
+			}
+			if (product < 10)
+				_putchar(prod + '0');
+			else
+			{
+				_putchar((product / 10) + '0');
 				_putchar((product % 10) + '0');
 			}
 		}

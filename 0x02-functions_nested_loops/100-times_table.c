@@ -7,6 +7,8 @@
  *
  * Return: the times table for int n.
  */
+void print_times_table(int n);
+
 void print_times_table(int n)
 {
 	int m, k, product;

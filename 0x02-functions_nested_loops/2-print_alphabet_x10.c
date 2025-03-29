@@ -9,8 +9,16 @@
 void print_alphabet_x10(void)
 {
 	int m;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (m = 0; m < 10; m++)
-		_putchar(alphabet);
+	{
+		int j = 0;
+		while (alphabet[j] != '\0')
+		{
+			_putchar(alphabet[j]);
+			j++;
+		}
+		_putchar('\n');
+	}
 }

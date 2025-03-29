@@ -12,7 +12,7 @@ int main(void)
 	unsigned long a = 1, b = 2, next;
 	unsigned long a1, a2, b1, b2, next1, next2;
 
-	printf("%lu, %lu, ", a, b);
+	printf("%lu, %lu ", a, b);
 
 	for (m = 3; m <= 92; m++) /* Normal fib sequence for first 92 terms */
 	{
