@@ -9,7 +9,7 @@
 int main(void)
 {
 	int m;
-	
+
 	for (m = 0; m < 10; m++)
 	{
 		putchar(m + '0');
