@@ -5,12 +5,12 @@
  */
 void print_most_numbers(void)
 {
-	char h;
+	char nums[] = "01356789\n";
+	char h = 0;
 
-	for (h = '0'; h <= '9'; h++)
+	for (nums[h] != '\0')
 	{
-		if (!(c == 2 || c == 4))
-			_putchar(c);
+		_putchar(nums[h]);
+		h++;
 	}
-	_putchar('\n');
 }
