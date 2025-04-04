@@ -1,4 +1,4 @@
-#include <stdio.h>
+#9include <stdio.h>
 /**
  * main - Entry point
  *
@@ -12,7 +12,7 @@ int main(void)
 	unsigned long a = 1, b = 2, next;
 	unsigned long a1, a2, b1, b2, high, low, divisor = 1000000000;
 
-	printf("%lu, %lu ", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (m = 3; m <= 92; m++) /* Normal fib sequence for first 92 terms */
 	{
