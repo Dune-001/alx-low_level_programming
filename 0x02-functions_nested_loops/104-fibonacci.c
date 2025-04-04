@@ -10,7 +10,7 @@ int main(void)
 {
 	int m;
 	unsigned long a = 1, b = 2, next;
-	unsigned long a1, a2, b1, b2, next1, next2;
+	unsigned long a1, a2, b1, b2, high, low, divisor = 1000000000;
 
 	printf("%lu, %lu ", a, b);
 
@@ -22,27 +22,27 @@ int main(void)
 		b = next;
 	}
 	/* Splitting numbers to handle overflow */
-	a1 = a / 1000000000; /* Higher part */
-	a2 = a % 1000000000; /* Lower part */
-	b1 = b / 1000000000;
-	b2 = b % 1000000000;
+	a1 = a / divisor; /* Higher part */
+	a2 = a % divisor; /* Lower part */
+	b1 = b / divisor;
+	b2 = b % divisor;
 
 	for (; m <= 98; m++)
 	{
-		next1 = a1 + b1; /* Compute higher part */
-		next2 = a2 + b2; /* Compute lower part */
+		high = a1 + b1; /* Compute higher part */
+		low = a2 + b2; /* Compute lower part */
 
-		if (next2 >= 1000000000) /* Handle carry */
+		if (low >= divisor) /* Handle carry */
 		{
-			next1++;
-			next2 -= 1000000000;
+			high += 1;
+			low -= divisor;
 		}
-		printf(", %lu%09lu", next1, next2); /* Ensure leading zeros */
+		printf(", %lu%09lu", high, low); /* Ensure leading zeros */
 
 		a1 = b1;
 		a2 = b2;
-		b1 = next1;
-		b2 = next2;
+		b1 = high;
+		b2 = low;
 	}
 	printf("\n");
 	return (0);

@@ -14,6 +14,7 @@ void print_alphabet_x10(void)
 	for (m = 0; m < 10; m++)
 	{
 		int j = 0;
+
 		while (alphabet[j] != '\0')
 		{
 			_putchar(alphabet[j]);
